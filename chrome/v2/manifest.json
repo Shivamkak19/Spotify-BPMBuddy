@@ -1,0 +1,37 @@
+{
+  "name": "Spot2",
+  "version": "0.1.0",
+  "description": "Saving timestamps in YT videos",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://*.open.spotify.com/*"],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.open.spotify.com/*"],
+      "js": ["scripts/content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/bookmark.png",
+        "assets/play.png",
+        "assets/delete.png",
+        "assets/save.png"
+      ],
+      "matches": ["https://*.open.spotify.com/*"]
+    }
+  ],
+  "action": {
+    "default_icon": {
+      "16": "assets/bookmark.png",
+      "24": "assets/bookmark.png",
+      "32": "assets/bookmark.png"
+    },
+    "default_title": "My YT Bookmarks",
+    "default_popup": "popup/popup.html"
+  },
+  "manifest_version": 3
+}

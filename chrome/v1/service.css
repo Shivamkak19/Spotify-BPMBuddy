@@ -1,0 +1,59 @@
+.invisible{
+    display: none;
+}
+
+
+
+
+
+.tempoBox{
+
+}
+
+.shell{
+
+}
+
+.mainBox{
+    
+    width: 300px;
+    height: 100px;
+    background-color: #121212e5;
+    bottom: 90px;
+    right: 0px;
+    position: absolute;
+    border-width: 1px 1px 1px;
+    border-style: solid none solid solid;
+    border-color: rgb(40, 40, 40) rgb(40, 40, 40) rgb(40, 40, 40);
+    border-image: initial;
+    border-right: none;
+
+}
+
+.box2{
+
+}
+
+.box3{
+
+}
+
+.svgBox{
+display: flex;
+margin: auto;
+}
+
+.icon {
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: currentcolor;
+    transition: transform .05s, fill .05s, stroke .05s;
+    stroke-width: 0;
+}
+
+.icon:hover {
+    transform: scale(1.03);
+    fill: white;
+    stroke: white; 
+    stroke-width: .25rem; 
+}
