@@ -19,20 +19,26 @@
         }
       },
 
-
-
     "background": {
     "service_worker": "service_worker.js"
     },
-
-    "permissions": ["scripting", "storage", "tabs"],
 
     "content_scripts": [
       {
         "js": ["scripts/content.js"],
         "css": ["service.css"],
-        "matches": [
-          "https://*.open.spotify.com/*"
+        "matches": ["https://open.spotify.com/*"]
+      }
+    ],
+
+    "web_accessible_resources": [
+      {
+        "matches": ["https://open.spotify.com/*"],
+        "resources": [
+          "scripts/initScript.js",
+          "scripts/authSpotify/getToken.js",
+          "scripts/authSpotify/master.mjs",
+          "scripts/authSpotify/redirect.js"
         ]
       }
     ]
