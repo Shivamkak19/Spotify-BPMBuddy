@@ -31,6 +31,12 @@
 
   console.log("scooby doo hea")
 
+
+  var whatup = "whatup"
+
+  console.log("checking from initScript")
+  console.log(whatup)
+
   // this.footer;
 // this.playBar;
 // this.leftItem;

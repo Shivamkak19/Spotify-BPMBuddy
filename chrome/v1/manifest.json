@@ -36,9 +36,10 @@
         "matches": ["https://open.spotify.com/*"],
         "resources": [
           "scripts/initScript.js",
-          "scripts/authSpotify/getToken.js",
-          "scripts/authSpotify/master.mjs",
-          "scripts/authSpotify/redirect.js"
+          "scripts/authorization.js",
+          "scripts/calls.js",
+          "scripts/overlay.js"
+
         ]
       }
     ]
