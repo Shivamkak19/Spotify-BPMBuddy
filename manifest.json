@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "spotifyApp",
+    "name": "Spotify BPM Buddy: Drums Practice Extension for Spotify",
     "version": "1.0",
-    "description": "spotify web app plugin",
+    "description": "The Spotify BPM Buddy Chrome Extension is the perfect tool to bring your jam sessions and music practice sessions to the next level.",
     "icons":{
         "16": "images/16.png",
         "32": "images/32.png",
