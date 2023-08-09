@@ -4,18 +4,18 @@
     "version": "1.0",
     "description": "spotify web app plugin",
     "icons":{
-        "16": "images/icon-16.png",
-        "32": "images/icon-32-2.png",
-        "48": "images/icon-48-2.png",
-        "128": "images/icon-128.png"
+        "16": "images/16.png",
+        "32": "images/32.png",
+        "48": "images/48.png",
+        "128": "images/128.png"
     },
 
     "action": {
         "default_icon": {
-          "16": "images/icon-16.png",
-          "32": "images/icon-32-2.png",
-          "48": "images/icon-48-2.png",
-          "128": "images/icon-128.png"
+          "16": "images/16.png",
+          "32": "images/32.png",
+          "48": "images/48.png",
+          "128": "images/128.png"
         }
       },
 
