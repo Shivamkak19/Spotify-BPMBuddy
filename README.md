@@ -68,26 +68,33 @@ The Spotify BPM Buddy Chrome Extension is the perfect tool to bring your jam ses
 ## About the Project
 
 ![Product Name Screen Shot][product-screenshot]
-<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-* [![C++][cplusplus]][cplusplus-url]
-* [![Arduino][arduino]][arduino-url]
+* [![chrome][chrome]][chrome-url]
+* [![spotify][spotify]][spotify-url]
+* [![tonejs][tonejs]][tonejs-url]
+* [![html][html]][html-url]
+* [![css][css]][css-url]
+* [![js][js]][js-url]
+* [![json][json]][json-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Below, I have included the set-up process for downloading and running this extension locally.
+Below, I have included the set-up process for downloading and running this extension locally. After cloning the repository, load unpacked at chrome://extensions for local test environment. 
 
 ### Prerequisites
 
-To run this project, you must download the latest version of the Arduino IDE (2.1.1). 
-Download here: https://www.arduino.cc/en/software
+<!-- To run this project, you must download the latest version of the npm package manager.
+
+  ```sh
+  npm install npm@latest -g
+  ``` -->
 
 ### Installation
 
@@ -96,27 +103,43 @@ Download here: https://www.arduino.cc/en/software
    git clone https://github.com/Shivamkak19/Spotify-BPMBuddy.git
    ```
 
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Once the source code is uploaded onto an Arduino Uno, the user must strap their finger into the heart rate monitor finger clasp. The LED panel will display important information regarding REM sleep cycle count and current heart rate. 
+Upon visiting https://open.spotify.com/, users will automatically be redirected to authorize usage with their Spotify account. 
 
-The alarm will ring after the input REM cycle count has elapsed. 
+![Product][product2]
 
-![Product Name Screen Shot][product-screenshot2]
-![Product Name Screen Shot][product-screenshot3]
+After reaching the Spotify web player, they will be able to access the Spotify BPMBuddy as an icon in the footer containing the Spotify player.
+
+![Product][product1]
+
+Users can use Spotify BPMBuddy on all of their favorite tracks to adjust track tempo and overlay a metronome click. The extension will likely not work as intended for podcasts.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Configure Circuit Design
-- [ ] Design algorithm for locating REM sleep cycles
-- [ ] Collect user input for desired quantity of REM sleep cycles
-    - [ ] Set alarm accordingly
+- [ ] Set up chrome manifest file
+  - [ ] Set domain matches to https://open.spotify.com/*
+- [ ] Set up test environment at chrome://extensions/
+- [ ] Utilize Spotify API to get tempo of current track
+    - [ ] Authorize Spotify user ID and get access token
+    - [ ] HTTP GET request every time new track plays
+- [ ] Grab HTML video playback element upon DOM creation
+    - [ ] Write algorithm to modify playback rate based on input BPM
+- [ ] Utilize Tone.js to implement drumsticks metronome (4/4 preset only)
+- [ ] Write algorithm to match metronome to closest upcoming beat in currently playing track on metronomeStart and metronomeEnd events
 
 See the [open issues](https://github.com/Shivamkak19/Spotify-BPMBuddy/issues) for a full list of proposed features (and known issues).
 
@@ -166,7 +189,6 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ## Contact
 
 * Shivam Kak: sk3686@princeton.edu
-* Maxwell Lin: ml7013@princeton.edu
 * Project Link: [https://github.com/Shivamkak19/Spotify-BPMBuddy](https://github.com/Shivamkak19/Spotify-BPMBuddy)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -175,8 +197,8 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []() Hossein Valavi, professor of Electrical Engineering at Princeton, for instruction of ECE 203 circuit analysis as well as support throughout the building process.
-* []() David Radcliff, Undergraduate Lab Manager @ Princeton Engineering, for assistance in debugging hardware issues and instruction in proper usage of electrical equipment.
+* []() freeCodeCamp, for great instructional content regarding creating a chrome extension start to finish, available here: https://www.youtube.com/watch?v=0n809nd4Zu4
+* []() [Nikunj Tyagi](https://www.linkedin.com/in/nikunj-tyagi/), for advice on product design during early stages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,13 +217,33 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [license-url]: https://github.com/Shivamkak19/Spotify-BPMBuddy/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/shivamkak
-[product-screenshot]: images/product-1.jpg
-[product-screenshot2]: images/product-2.jpg
-[product-screenshot3]: images/product-3.jpg
+
+
+[product1]: images/product1.png
+[product2]: images/product2.png
 
 <!-- Programming Language Shields -->
-[cplusplus]:  https://img.shields.io/badge/C++-00427e?style=for-the-badge&logo=cplusplus&logoColor=61DAFB
-[cplusplus-url]: https://cplusplus.com/
+[chrome]: https://img.shields.io/badge/Chrome-API-00427e?style=for-the-badge&logo=googlechrome&logoColor=61DAFB
+[chrome-url]: https://developer.chrome.com/docs/extensions/
 
-[arduino]: https://img.shields.io/badge/Arduino-008183?style=for-the-badge&logo=arduino&logoColor=000000
-[arduino-url]: https://www.arduino.cc/
+[spotify]: https://img.shields.io/badge/spotify-api-333333?style=for-the-badge&logo=spotify&logoColor=spotify&labelColor=000000
+[spotify-url]: https://developer.spotify.com/documentation/web-api
+
+[html]: https://img.shields.io/badge/HTML5-dc4a25?style=for-the-badge&logo=html5&logoColor=ffffff
+[html-url]: https://developer.mozilla.org/en-US/docs/Glossary/HTML5
+
+[css]: https://img.shields.io/badge/CSS3-2862ea?style=for-the-badge&logo=css3&logoColor=ffffff
+[css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+
+[js]: https://img.shields.io/badge/JS-000000?style=for-the-badge&logo=javascript&logoColor=efd81c
+[js-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+[json]: https://img.shields.io/badge/JSON-919191?style=for-the-badge&logo=json&logoColor=333333
+[json-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON
+
+[tonejs-url]: https://tonejs.github.io/
+[tonejs]: https://tinyurl.com/2p93e2x5
+[tonejs-original]: https://img.shields.io/badge/Tone-JS-f432d4.svg?logo=data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMTAwJSIgdmlld0JveD0iMCAwIDI4MCAyODAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI4MCAyODAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSIjRjMzMkQ0IiBvcGFjaXR5PSIxLjAwMDAwMCIgc3Ryb2tlPSJub25lIiAKCWQ9IgpNMS4wMDAwMDAsMTI4LjAwMDAwMCAKCUMxLjAwMDAwMCw4NS42OTk4MjEgMS4wMDAwMDAsNDMuMzk5NjM5IDEuMDAwMDAwLDEuMDQ5NzMwIAoJQzk0LjIyNzA2NiwxLjA0OTczMCAxODcuNDU0MTc4LDEuMDQ5NzMwIDI4MS4wMDAwMDAsMS4wNDk3MzAgCglDMjgxLjAwMDAwMCw1MS4zNTM3NzkgMjgxLjAwMDAwMCwxMDEuNzA4MjI5IDI4MC42MzY4NDEsMTUyLjQ5OTYwMyAKCUMyNTguODc4ODE1LDE2NC4wMjM1NjAgMjM3LjQ3Mzc4NSwxNzUuMDkxMDgwIDIxNi4wOTIzMDAsMTg2LjIwMzg4OCAKCUMxOTkuNTcwNTExLDE5NC43OTA4OTQgMTgzLjA5NDgzMywyMDMuNDY2NjQ0IDE2Ni41NjU3MjAsMjEyLjAzOTM5OCAKCUMxNTguNTE0MDM4LDIxNi4yMTUzNjMgMTUwLjM4NzA1NCwyMjAuMjQ2MTQwIDE0MS4yODI3NDUsMjI0Ljg1NDU5OSAKCUMxNDAuNzQ1OTExLDE2OC41ODE5MDkgMTQwLjIxOTc1NywxMTMuNDI4NTUxIDEzOS42ODcyMTAsNTcuNjA2MzgwIAoJQzEzNy43ODk1NTEsNTguNDAxOTc4IDEzNi40MjE3NjgsNTguODY3NzAyIDEzNS4xNTIyNTIsNTkuNTIzNjcwIAoJQzExMi42OTQyOTAsNzEuMTI3ODYxIDkwLjIzNjc3MSw4Mi43MzMwNzAgNjcuODAzNDY3LDk0LjM4NDg0MiAKCUM1MC44NDIwODcsMTAzLjE5NDUxMSAzMy45NTM2NDQsMTEyLjE0NTUwMCAxNi45NDkyMDksMTIwLjg3MDgxOSAKCUMxMS43NzU1OTksMTIzLjUyNTQ5NyA2LjMyNDE4MiwxMjUuNjM4NzYzIDEuMDAwMDAwLDEyOC4wMDAwMDAgCnoiLz4KPHBhdGggZmlsbD0iIzIxREFCRSIgb3BhY2l0eT0iMS4wMDAwMDAiIHN0cm9rZT0ibm9uZSIgCglkPSIKTTEuMDAwMDAwLDEyOC40Njg2NTggCglDNi4zMjQxODIsMTI1LjYzODc2MyAxMS43NzU1OTksMTIzLjUyNTQ5NyAxNi45NDkyMDksMTIwLjg3MDgxOSAKCUMzMy45NTM2NDQsMTEyLjE0NTUwMCA1MC44NDIwODcsMTAzLjE5NDUxMSA2Ny44MDM0NjcsOTQuMzg0ODQyIAoJQzkwLjIzNjc3MSw4Mi43MzMwNzAgMTEyLjY5NDI5MCw3MS4xMjc4NjEgMTM1LjE1MjI1Miw1OS41MjM2NzAgCglDMTM2LjQyMTc2OCw1OC44Njc3MDIgMTM3Ljc4OTU1MSw1OC40MDE5NzggMTM5LjY4NzIxMCw1Ny42MDYzODAgCglDMTQwLjIxOTc1NywxMTMuNDI4NTUxIDE0MC43NDU5MTEsMTY4LjU4MTkwOSAxNDEuMjgyNzQ1LDIyNC44NTQ1OTkgCglDMTUwLjM4NzA1NCwyMjAuMjQ2MTQwIDE1OC41MTQwMzgsMjE2LjIxNTM2MyAxNjYuNTY1NzIwLDIxMi4wMzkzOTggCglDMTgzLjA5NDgzMywyMDMuNDY2NjQ0IDE5OS41NzA1MTEsMTk0Ljc5MDg5NCAyMTYuMDkyMzAwLDE4Ni4yMDM4ODggCglDMjM3LjQ3Mzc4NSwxNzUuMDkxMDgwIDI1OC44Nzg4MTUsMTY0LjAyMzU2MCAyODAuNjM2ODQxLDE1Mi45NjgyNjIgCglDMjgxLjAwMDAwMCwxOTUuNjMzMzc3IDI4MS4wMDAwMDAsMjM4LjI2Njc2OSAyODEuMDAwMDAwLDI4MC45NTAwNzMgCglDMTg3Ljc3Mjc4MSwyODAuOTUwMDczIDk0LjU0NTUzMiwyODAuOTUwMDczIDEuMDAwMDAwLDI4MC45NTAwNzMgCglDMS4wMDAwMDAsMjMwLjMxMjg4MSAxLjAwMDAwMCwxNzkuNjI1MTA3IDEuMDAwMDAwLDEyOC40Njg2NTggCnoiLz4KPC9zdmc+&labelColor=000000
+
+
+
