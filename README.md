@@ -66,7 +66,7 @@ The Spotify BPM Buddy Chrome Extension is the perfect tool to bring your jam ses
 <!-- ABOUT THE PROJECT -->
 ## About the Project
 
-![Product Name Screen Shot][product-screenshot]
+<!-- ![Product][product4] -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,11 +115,7 @@ The Spotify BPM Buddy Chrome Extension is the perfect tool to bring your jam ses
 
 Upon visiting https://open.spotify.com/, users will automatically be redirected to authorize usage with their Spotify account. 
 
-
-
 ![Product][product3]
-
-![Product][product2]
 
 After reaching the Spotify web player, they will be able to access the Spotify BPMBuddy as an icon in the footer containing the Spotify player.
 
