@@ -182,16 +182,12 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <!-- CONTACT -->
 ## Contact
 
 * Shivam Kak: sk3686@princeton.edu
 * Project Link: [https://github.com/Shivamkak19/Spotify-BPMBuddy](https://github.com/Shivamkak19/Spotify-BPMBuddy)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
