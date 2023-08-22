@@ -162,18 +162,20 @@ Don't forget to give the project a star! Thanks again!
 ## Beta Features
 
 <div align="center">
+
   <a href="https://github.com/Shivamkak19/Spotify-BPMBuddy">
     <img src="images/logo-exp.png" alt="Logo">
   </a>
 
-<h3 align="center">Beta Features</h3>
+  <h3 align="center">Beta Features</h3>
 
-Beta features currently in production include features for more advanced metronome overlays onto the Spotify player. Most notably, this includes the ability to overlay preset drum beats onto the Spotify track along with a metronome click. Available drum presets depend on the time signature of the currently playing track. These features are intended to optimize timekeeping habits for music students in a way that keeps learning fun.
+  Beta features currently in production include features for more advanced metronome overlays onto the Spotify player. Most notably, this includes the ability to overlay preset drum beats onto the Spotify track along with a metronome click. Available drum presets depend on the time signature of the currently playing track. These features are intended to optimize timekeeping habits for music students in a way that keeps learning fun.
 
-The expected release data for this set of features is approx. December 2023 - February 2024. 
+  The expected release data for this set of features is approx. December 2023 - February 2024. 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+</div>
 
 <!-- LICENSE -->
 ## License
