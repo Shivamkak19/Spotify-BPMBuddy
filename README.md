@@ -68,7 +68,7 @@ The Spotify BPM Buddy Chrome Extension is the perfect tool to bring your jam ses
 
 <!-- ![Product][product4] -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
 ### Built With
 
